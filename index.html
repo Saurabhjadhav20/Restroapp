@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Menu</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Custom Styles */
+    .hero-section {
+      background-image: url('https://www.shutterstock.com/image-photo/empty-beautiful-round-wood-tabletop-260nw-2348567855.jpg');  
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .menu-section {
+      padding: 40px 0;
+    }
+
+    .menu-item {
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-item img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .menu-item h5 {
+      margin-top: 15px;
+    }
+
+    .menu-item p {
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"> <i>Hotel Kitchen King</i> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Welcome to Our Hotel</h1>
+      <p>Explore Our Delicious Menu</p>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Menu</h2>
+
+      <div class="row">
+        <!-- Menu Item 1 -->
+        <div class="col-md-4">
+          <div class="menu-item">
+            <img src="papad.jpg" alt="Starter">
+            <h5>Delicious Starter</h5>
+            <p>A delightful way to begin your meal.</p>
+            <p><strong>Price: 120</strong></p>
+          </div>
+        </div>
+
+        <!-- Menu Item 2 -->
+        <div class="col-md-4">
+          <div class="menu-item">
+            <a href="maincourse.html"><img src="rice.jpg" alt="Main Course"></a>
+            <h5>Main Course</h5>
+            <p>A delicious main course that you'll love.</p>
+            <p><strong>Price: 200</strong></p>
+            
+          </div>
+        </div>
+
+        <!-- Menu Item 3 -->
+        <div  class="col-md-4 ">
+          <div class="menu-item">
+            <img src="friderice.jpg" alt="Dessert">
+            <h5>FrideRice</h5>
+            <p>A perfect way to end your meal.</p>
+            <p><strong>Price: 190</strong></p>
+          </div>
+        </div>
+
+         <!-- Menu Item 4 -->
+         <div class="col-md-4">
+          <div class="menu-item">
+            <img src="dosa.jpg" alt="Dessert">
+            <h5>Dosa</h5>
+            <p>A perfect way to end your meal.</p>
+            <p><strong>Price: 150</strong></p>
+          </div>
+        </div>
+         <!-- Menu Item 5 -->
+         <div class="col-md-4">
+          <div class="menu-item">
+            <img src="rice.jpg" alt="Dessert">
+            <h5>Delightful Dessert</h5>
+            <p>A perfect way to end your meal.</p>
+            <p><strong>Price: 170</strong></p>
+          </div>
+        </div>
+         <!-- Menu Item 6 -->
+         <div class="col-md-4">
+          <div class="menu-item">
+            <img src="rice.jpg" alt="Dessert">
+            <h5>Delightful Dessert</h5>
+            <p>A perfect way to end your meal.</p>
+            <p><strong>Price: 300</strong></p>
+          </div>
+        </div>
+      </div>
+
+      
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">About Us</h2>
+      <p class="text-center">Our hotel offers a delightful experience with a curated menu of delicious food.</p>
+      
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+ <!-- <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <p class="text-center">For reservations or inquiries, please contact us at (555) 555-5555 or email info@hotel.com.</p>
+    </div>
+  </section> 
+-->
+<section id="contact" class="py-5">
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <h2 class="text-center mb-4">Contact Us</h2>
+
+            <form action="submit_form.php" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Booking Section -->
+<section id="book" class="py-5">
+  <div class="container">
+      <h2 class="text-center mb-4">Book Your Table</h2>
+      <form action="submit_booking.php" method="POST" class="row g-3">
+          <div class="col-md-6">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="col-md-6">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="col-md-6">
+            <label for="checkin" class="form-label">Check-In Date</label>
+            <input type="Date" class="form-control" id="checkin" name="checkin" required>
+        </div>
+        
+          <div class="col-md-6">
+              <label for="checkin" class="form-label">Check-In Time</label>
+              <input type="time" class="form-control" id="checkin" name="checkin" required>
+          </div>
+          <div class="col-md-6">
+              <label for="checkout" class="form-label">Check-Out Time</label>
+              <input type="time" class="form-control" id="checkout" name="checkout" required>
+          </div>
+          <div class="col-md-12">
+              <label for="roomtype" class="form-label">Table Type</label>
+              <select class="form-select" id="roomtype" name="roomtype" required>
+                  <option value="deluxe">spcisous</option>
+                  <option value="suite">Suite</option>
+                  <option value="presidential">Presidential Suite</option>
+              </select>
+          </div>
+          <div class="col-12">
+              <button type="submit" class="btn btn-primary w-100">Book Now</button>
+          </div>
+      </form>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Hotel KitchenKing. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
